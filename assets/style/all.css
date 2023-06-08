@@ -471,26 +471,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1296px;
   }
 }
-.absolute {
-  position: absolute;
-}
 .relative {
   position: relative;
-}
-.inset-0 {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-.top-0 {
-  top: 0px;
-}
-.bottom-20 {
-  bottom: 5rem;
-}
-.-bottom-20 {
-  bottom: -5rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -515,17 +497,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-10 {
   height: 2.5rem;
 }
-.h-full {
-  height: 100%;
-}
-.h-screen {
-  height: 100vh;
-}
 .w-\[147px\] {
   width: 147px;
 }
 .w-10 {
   width: 2.5rem;
+}
+.resize {
+  resize: both;
 }
 .flex-col {
   -webkit-box-orient: vertical;
@@ -584,7 +563,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-black {
   font-weight: 900;
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -601,13 +579,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[245px\] {
     width: 245px;
-  }
-
-  .md\:flex-row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 
   .md\:gap-x-5 {
