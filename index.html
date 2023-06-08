@@ -6,19 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body>
-  <header class="header">
-    這是 header
-  </header>
+<body class="bg-black-100">
+  <div class="container">
+    <header class="flex justify-between items-center py-7 md:py-5 border-b border-black-0 relative">
+      <h1>
+        <a href="./index.html" class="block bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true')] bg-cover overflow-hidden whitespace-nowrap indent-[101%] w-[147px] h-6 md:w-[245px] md:h-10">
+          AI工具王
+        </a>
+      </h1>
+      <nav>
+        <a href="" class="flex items-center justify-center md:hidden w-10 h-10" id="menu-toggle">
+          <img src="./assets/images/menu.png" alt="">
+        </a>
+        <div class="hidden md:block">
+          <ul class="flex md:gap-x-5">
+            <li>首頁</li>
+            <li>定價</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav class="hidden" id="menu">
+      <ul class="flex flex-col justify-center items-center">
+        <li class="text-7xl font-black">
+          <a href="./index.html">首頁</a>
+        </li>
+        <li class="text-7xl font-black mt-2">
+          <a href="">定價</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   
-<p class="text-3xl font-bold underline">This is a demo.</p>
+
 
   <footer class="footer">
-    footer
+   
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
