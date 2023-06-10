@@ -36,4 +36,26 @@ var goToTop = function goToTop(e) {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+/* swiper */
+
+
+var swiper = new Swiper(".cardSwiper", {
+  slidesPerView: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 2.2
+    },
+    768: {
+      slidesPerView: 2
+    }
+  },
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+});
 //# sourceMappingURL=all.js.map
