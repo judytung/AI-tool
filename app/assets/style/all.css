@@ -16,6 +16,21 @@
     } 
   }
 
+  img {
+    object-fit: cover;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
   .ani-1 {
     animation: ani1 3s linear infinite;
   }
