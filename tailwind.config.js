@@ -9,7 +9,7 @@ module.exports = {
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
-      'xl': '1296px',
+      'xl': '1320px',
     },
     fontSize: {
       xs: '12px',
@@ -37,6 +37,11 @@ module.exports = {
           20: '#F2F2F2',
           0: '#FFFFFF'
         }
+      },
+      spacing: {
+        '25': '100px',
+        '30': '7.5rem',
+        '45': '11.25rem'
       }
     },
   },

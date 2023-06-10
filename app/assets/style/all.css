@@ -10,10 +10,103 @@
     @apply text-black-0
   }
 
-
   @media (prefers-reduced-motion: no-preference) {
     :root {
       scroll-behavior: smooth; 
     } 
+  }
+
+  .ani-1 {
+    animation: ani1 3s linear infinite;
+  }
+
+  .ani-2 {
+    animation: ani2 3s linear infinite;
+  }
+
+  .ani-3 {
+    animation: ani3 3s linear infinite;
+  }
+
+  @keyframes ani1 {
+    0% {
+      background-position-y: 270px;
+    }
+
+    15% {
+      background-position-y: 180px;
+    }
+
+    35% {
+      background-position-y: 90px;
+    }
+
+    50% {
+      background-position-y: 0px;
+    }
+
+    65% {
+      background-position-y: 0px;
+    }
+
+    80% {
+      background-position-y: -90px;
+    }
+
+    100% {
+      background-position-y: -180px;
+    }
+  }
+
+  @keyframes ani2 {
+    0% {
+      background-position-y: 240px;
+    }
+
+    20% {
+      background-position-y: 130px;
+    }
+
+    45% {
+      background-position-y: 0px;
+    }
+
+    60% {
+      background-position-y: 0px;
+    }
+
+    75% {
+      background-position-y: -130px;
+    }
+
+    100% {
+      background-position-y: -240px;
+    }
+  }
+
+  @keyframes ani3 {
+    0% {
+      background-position-y: 210px;
+    }
+
+    15% {
+      background-position-y: 90px;
+    }
+
+    40% {
+      background-position-y: 0px;
+    }
+
+    55% {
+      background-position-y: 0px;
+    }
+
+    65% {
+      background-position-y: -90px;
+    }
+
+    100% {
+      background-position-y: -210px;
+    }
   }
 }
