@@ -403,183 +403,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     } 
   }
 
-  .ani-1 {
-    -webkit-animation: ani1 3s linear infinite;
-            animation: ani1 3s linear infinite;
-  }
-
-  .ani-2 {
-    -webkit-animation: ani2 3s linear infinite;
-            animation: ani2 3s linear infinite;
-  }
-
-  .ani-3 {
-    -webkit-animation: ani3 3s linear infinite;
-            animation: ani3 3s linear infinite;
-  }
-
-  @-webkit-keyframes ani1 {
-    0% {
-      background-position-y: 270px;
-    }
-
-    15% {
-      background-position-y: 180px;
-    }
-
-    35% {
-      background-position-y: 90px;
-    }
-
-    50% {
-      background-position-y: 0px;
-    }
-
-    65% {
-      background-position-y: 0px;
-    }
-
-    80% {
-      background-position-y: -90px;
-    }
-
-    100% {
-      background-position-y: -180px;
-    }
-  }
-
-  @keyframes ani1 {
-    0% {
-      background-position-y: 270px;
-    }
-
-    15% {
-      background-position-y: 180px;
-    }
-
-    35% {
-      background-position-y: 90px;
-    }
-
-    50% {
-      background-position-y: 0px;
-    }
-
-    65% {
-      background-position-y: 0px;
-    }
-
-    80% {
-      background-position-y: -90px;
-    }
-
-    100% {
-      background-position-y: -180px;
-    }
-  }
-
-  @-webkit-keyframes ani2 {
-    0% {
-      background-position-y: 240px;
-    }
-
-    20% {
-      background-position-y: 130px;
-    }
-
-    45% {
-      background-position-y: 0px;
-    }
-
-    60% {
-      background-position-y: 0px;
-    }
-
-    75% {
-      background-position-y: -130px;
-    }
-
-    100% {
-      background-position-y: -240px;
-    }
-  }
-
-  @keyframes ani2 {
-    0% {
-      background-position-y: 240px;
-    }
-
-    20% {
-      background-position-y: 130px;
-    }
-
-    45% {
-      background-position-y: 0px;
-    }
-
-    60% {
-      background-position-y: 0px;
-    }
-
-    75% {
-      background-position-y: -130px;
-    }
-
-    100% {
-      background-position-y: -240px;
-    }
-  }
-
-  @-webkit-keyframes ani3 {
-    0% {
-      background-position-y: 210px;
-    }
-
-    15% {
-      background-position-y: 90px;
-    }
-
-    40% {
-      background-position-y: 0px;
-    }
-
-    55% {
-      background-position-y: 0px;
-    }
-
-    65% {
-      background-position-y: -90px;
-    }
-
-    100% {
-      background-position-y: -210px;
-    }
-  }
-
-  @keyframes ani3 {
-    0% {
-      background-position-y: 210px;
-    }
-
-    15% {
-      background-position-y: 90px;
-    }
-
-    40% {
-      background-position-y: 0px;
-    }
-
-    55% {
-      background-position-y: 0px;
-    }
-
-    65% {
-      background-position-y: -90px;
-    }
-
-    100% {
-      background-position-y: -210px;
-    }
+  img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
 *, ::before, ::after {
@@ -675,11 +501,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .mt-3 {
   margin-top: 0.75rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .block {
   display: block;
@@ -704,11 +530,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full {
   height: 100%;
 }
-.h-6 {
-  height: 1.5rem;
-}
 .h-10 {
   height: 2.5rem;
+}
+.h-6 {
+  height: 1.5rem;
 }
 .h-4 {
   height: 1rem;
@@ -721,6 +547,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-\[117px\] {
   width: 117px;
+}
+.w-40 {
+  width: 10rem;
 }
 .w-\[147px\] {
   width: 147px;
@@ -787,6 +616,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -886,6 +718,249 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-6 {
   line-height: 1.5rem;
 }
+.scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+.ani-1 {
+    -webkit-animation: ani1 3s linear infinite;
+            animation: ani1 3s linear infinite;
+  }
+.ani-2 {
+    -webkit-animation: ani2 3s linear infinite;
+            animation: ani2 3s linear infinite;
+  }
+.ani-3 {
+    -webkit-animation: ani3 3s linear infinite;
+            animation: ani3 3s linear infinite;
+  }
+@-webkit-keyframes ani1 {
+    0% {
+      background-position-y: 270px;
+    }
+
+    15% {
+      background-position-y: 180px;
+    }
+
+    35% {
+      background-position-y: 90px;
+    }
+
+    50% {
+      background-position-y: 0px;
+    }
+
+    65% {
+      background-position-y: 0px;
+    }
+
+    80% {
+      background-position-y: -90px;
+    }
+
+    100% {
+      background-position-y: -180px;
+    }
+  }
+@keyframes ani1 {
+    0% {
+      background-position-y: 270px;
+    }
+
+    15% {
+      background-position-y: 180px;
+    }
+
+    35% {
+      background-position-y: 90px;
+    }
+
+    50% {
+      background-position-y: 0px;
+    }
+
+    65% {
+      background-position-y: 0px;
+    }
+
+    80% {
+      background-position-y: -90px;
+    }
+
+    100% {
+      background-position-y: -180px;
+    }
+  }
+@-webkit-keyframes ani2 {
+    0% {
+      background-position-y: 240px;
+    }
+
+    20% {
+      background-position-y: 130px;
+    }
+
+    45% {
+      background-position-y: 0px;
+    }
+
+    60% {
+      background-position-y: 0px;
+    }
+
+    75% {
+      background-position-y: -130px;
+    }
+
+    100% {
+      background-position-y: -240px;
+    }
+  }
+@keyframes ani2 {
+    0% {
+      background-position-y: 240px;
+    }
+
+    20% {
+      background-position-y: 130px;
+    }
+
+    45% {
+      background-position-y: 0px;
+    }
+
+    60% {
+      background-position-y: 0px;
+    }
+
+    75% {
+      background-position-y: -130px;
+    }
+
+    100% {
+      background-position-y: -240px;
+    }
+  }
+@-webkit-keyframes ani3 {
+    0% {
+      background-position-y: 210px;
+    }
+
+    15% {
+      background-position-y: 90px;
+    }
+
+    40% {
+      background-position-y: 0px;
+    }
+
+    55% {
+      background-position-y: 0px;
+    }
+
+    65% {
+      background-position-y: -90px;
+    }
+
+    100% {
+      background-position-y: -210px;
+    }
+  }
+@keyframes ani3 {
+    0% {
+      background-position-y: 210px;
+    }
+
+    15% {
+      background-position-y: 90px;
+    }
+
+    40% {
+      background-position-y: 0px;
+    }
+
+    55% {
+      background-position-y: 0px;
+    }
+
+    65% {
+      background-position-y: -90px;
+    }
+
+    100% {
+      background-position-y: -210px;
+    }
+  }
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+.before\:h-23::before {
+  content: var(--tw-content);
+  height: 5.75rem;
+}
+.before\:w-20::before {
+  content: var(--tw-content);
+  width: 5rem;
+}
+.before\:bg-gradient-to-l::before {
+  content: var(--tw-content);
+  background-image: -webkit-gradient(linear, right top, left top, from(var(--tw-gradient-stops)));
+  background-image: -o-linear-gradient(right, var(--tw-gradient-stops));
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+.before\:from-transparent::before {
+  content: var(--tw-content);
+  --tw-gradient-from: transparent;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
+.before\:to-black-100::before {
+  content: var(--tw-content);
+  --tw-gradient-to: #020202;
+}
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+.after\:top-0::after {
+  content: var(--tw-content);
+  top: 0px;
+}
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
+}
+.after\:h-23::after {
+  content: var(--tw-content);
+  height: 5.75rem;
+}
+.after\:w-20::after {
+  content: var(--tw-content);
+  width: 5rem;
+}
+.after\:bg-gradient-to-r::after {
+  content: var(--tw-content);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops)));
+  background-image: -o-linear-gradient(left, var(--tw-gradient-stops));
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.after\:from-transparent::after {
+  content: var(--tw-content);
+  --tw-gradient-from: transparent;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
+.after\:to-black-100::after {
+  content: var(--tw-content);
+  --tw-gradient-to: #020202;
+}
 .hover\:bg-black-0:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -960,6 +1035,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 5rem;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1012,5 +1091,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-6xl {
     font-size: 48px;
+  }
+
+  .before\:lg\:h-25::before {
+    content: var(--tw-content);
+    height: 100px;
+  }
+
+  .before\:lg\:w-49::before {
+    content: var(--tw-content);
+    width: 12.25rem;
+  }
+
+  .after\:lg\:h-25::after {
+    content: var(--tw-content);
+    height: 100px;
+  }
+
+  .after\:lg\:w-49::after {
+    content: var(--tw-content);
+    width: 12.25rem;
   }
 }
