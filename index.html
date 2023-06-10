@@ -21,13 +21,17 @@
         </a>
       </h1>
       <nav>
-        <a href="" class="flex items-center justify-center md:hidden w-10 h-10" id="menu-toggle">
-          <img src="./assets/images/menu.png" alt="">
+        <a href="" class="flex items-center justify-center lg:hidden w-10 h-10" id="menu-toggle" data-icon="open">
+          <img src="./assets/images/menu.png" alt="三條白線，水平並排">
         </a>
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
           <ul class="flex md:gap-x-5">
-            <li>首頁</li>
-            <li>定價</li>
+            <li>
+              <a href="./index.html" class="block">首頁</a>
+            </li>
+            <li>
+              <a href="" class="block">定價</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -35,21 +39,40 @@
     <nav class="hidden" id="menu">
       <ul class="flex flex-col justify-center items-center">
         <li class="text-7xl font-black">
-          <a href="./index.html">首頁</a>
+          <a href="./index.html" class="block">首頁</a>
         </li>
         <li class="text-7xl font-black mt-2">
-          <a href="">定價</a>
+          <a href="" class="block">定價</a>
         </li>
       </ul>
     </nav>
+    <div class="main"></div>
+    <footer class="border-t border-black-0 py-5">
+      <div class="flex justify-between flex-wrap">
+        <span class="text-base leading-6 py-3 basis-1/2 lg:basis-2/12">AI工具王 © 2023</span>
+        <a href="" class="leading-6 flex item-center justify-end gap-x-4 py-3 basis-1/2 lg:basis-7/12 lg:order-3" id="goTop">
+          Back to top
+          <img src="./assets/images/arrow upward.png" alt="白色向上指示的箭頭符號" class="w-4 h-4">
+        </a>
+        <ul class="flex gap-x-5 mt-3 lg:mt-0 lg:order-2 basis-full lg:basis-3/12">
+          <li>
+            <a href="#" class="block leading-6 py-3">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="block leading-6 py-3">Twitter</a> 
+          </li>
+          <li>
+            <a href="#" class="block leading-6 py-3">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 
   
 
-
-  <footer class="footer">
-   
-  </footer>
+  
+ 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
