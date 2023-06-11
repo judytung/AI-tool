@@ -549,6 +549,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: -ms-flexbox;
   display: flex;
 }
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 .contents {
   display: contents;
 }
@@ -588,8 +593,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-4 {
   width: 1rem;
 }
-.w-6 {
-  width: 1.5rem;
+.w-12 {
+  width: 3rem;
+}
+.w-\[245px\] {
+  width: 245px;
 }
 .w-\[147px\] {
   width: 147px;
@@ -661,6 +669,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-column-gap: 0.5rem;
      -moz-column-gap: 0.5rem;
           column-gap: 0.5rem;
+}
+.gap-x-1 {
+  -webkit-column-gap: 0.25rem;
+     -moz-column-gap: 0.25rem;
+          column-gap: 0.25rem;
 }
 .gap-x-5 {
   -webkit-column-gap: 1.25rem;
@@ -854,6 +867,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }
+.card:hover img{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
   }
 .ani-1 {
     -webkit-animation: ani1 3s linear infinite;
@@ -1130,12 +1151,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 33.333333%;
   }
 
-  .md\:w-\[48\%\] {
-    width: 48%;
-  }
-
   .md\:w-\[245px\] {
     width: 245px;
+  }
+
+  .md\:w-\[48\%\] {
+    width: 48%;
   }
 
   .md\:flex-nowrap {
@@ -1172,6 +1193,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+
+  .lg\:order-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 
   .lg\:mt-25 {
@@ -1245,6 +1272,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:basis-3\/12 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+  }
+
+  .lg\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .lg\:justify-between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .lg\:rounded-\[160px\] {
