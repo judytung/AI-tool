@@ -544,6 +544,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-\[258px\] {
   margin-top: 258px;
 }
+.mb-30 {
+  margin-bottom: 7.5rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .block {
   display: block;
 }
@@ -1275,6 +1284,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 238px;
   }
 
+  .lg\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1374,6 +1391,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-7xl {
     font-size: 80px;
+  }
+
+  .lg\:leading-\[1\.2\] {
+    line-height: 1.2;
   }
 
   .before\:lg\:h-25::before {
