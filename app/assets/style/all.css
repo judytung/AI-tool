@@ -45,6 +45,11 @@
     background: #fff;
   }
 
+  .card:hover img{
+    transition: .3s;
+    transform: scale(1.2);
+  }
+
   .ani-1 {
     animation: ani1 3s linear infinite;
   }

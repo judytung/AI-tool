@@ -63,4 +63,53 @@ const swiper = new Swiper(".cardSwiper", {
 
 /* get ai tool data */
 
+const path = 'https://2023-engineer-camp.zeabur.app';
+const list = document.querySelector('#ai-tool-list');
 
+let worksData = []
+let pagesData = {}
+let data = {
+  type: '',
+  sort: 0,
+  page: 1,
+  search: ''
+}
+
+function getData ({ type, sort, page, search }) {
+  const url = `${path}/api/v1/works?sort=${sort}&page=${page}&${type ? `type=${type}&` : ''}${search ? `search=${search}` : ''}`
+  axios.get(url)
+    .then(res => {
+      worksData = res.data.ai_works.data;
+      pagesData = res.data.ai_works.page;
+      renderWorks();
+      console.log(pagesData)
+    })
+}
+
+getData(data);
+
+function renderWorks () {
+  let result = '';
+  worksData.forEach(item => {
+    result += `<li class="card flex flex-col border border-black-20 rounded-t-2xl w-full md:w-[48%] lg:w-[32%] overflow-hidden cursor-pointer">
+    <div class="overflow-hidden">
+      <img src="${item.imageUrl}" alt="${item.title}" class="w-full">
+    </div>
+    <div class="py-5 px-8 flex-grow">
+      <h3 class="text-black-100 text-xl font-black">${item.title}</h3>
+      <p class="text-black-80 text-sm leading-normal mt-3">${item.description}</p>
+    </div>
+    <div class="flex justify-between border-t border-black-20 py-5 px-8">
+      <span class="text-black-100 leading-6 font-bold">AI 模型</span>
+      <span class="text-black-100 leading-6">${item.model}</span>
+    </div>
+    <div class="flex justify-between border-t border-black-20 py-5 px-8">
+      <span class="text-black-100 leading-6">#${item.type}</span>
+      <a href="#">
+        <span class="material-icons text-black-100">share</span>
+      </a>
+    </div>
+  </li>`
+  });
+  list.innerHTML = result;
+}
