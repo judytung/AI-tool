@@ -58,4 +58,5 @@ var swiper = new Swiper(".cardSwiper", {
     clickable: true
   }
 });
+/* get ai tool data */
 //# sourceMappingURL=all.js.map
