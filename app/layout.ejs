@@ -17,7 +17,7 @@
   <div class="container">
     <header class="flex justify-between items-center py-7 md:py-5 border-b border-black-0 relative">
       <h1>
-        <a href="./index.html" class="block bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true')] bg-cover overflow-hidden whitespace-nowrap indent-[101%] w-[147px] h-6 md:w-[245px] md:h-10">
+        <a href="./index.html" class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true')] bg-cover overflow-hidden whitespace-nowrap indent-[101%] w-[147px] h-6 md:w-[245px] md:h-10">
           AI工具王
         </a>
       </h1>
@@ -28,10 +28,10 @@
         <div class="hidden lg:block">
           <ul class="flex md:gap-x-5">
             <li>
-              <a href="./index.html" class="block">首頁</a>
+              <a href="./index.html">首頁</a>
             </li>
             <li>
-              <a href="" class="block">定價</a>
+              <a href="">定價</a>
             </li>
           </ul>
         </div>
@@ -40,14 +40,16 @@
     <nav class="hidden" id="menu">
       <ul class="flex flex-col justify-center items-center py-48">
         <li class="text-7xl font-black">
-          <a href="./index.html" class="block">首頁</a>
+          <a href="./index.html">首頁</a>
         </li>
         <li class="text-7xl font-black mt-2">
-          <a href="" class="block">定價</a>
+          <a href="">定價</a>
         </li>
       </ul>
     </nav>
+  </div>
     <%- contents %>
+  <div class="container">
     <footer class="border-t border-black-0 py-5">
       <div class="flex justify-between flex-wrap">
         <span class="text-base leading-6 py-3 basis-1/2 lg:basis-2/12">AI工具王 © 2023</span>
@@ -57,13 +59,13 @@
         </a>
         <ul class="flex gap-x-5 mt-3 lg:mt-0 lg:order-2 basis-full lg:basis-3/12">
           <li>
-            <a href="#" class="block leading-6 py-3">Facebook</a>
+            <a href="#" class="leading-6 py-3">Facebook</a>
           </li>
           <li>
-            <a href="#" class="block leading-6 py-3">Twitter</a> 
+            <a href="#" class="leading-6 py-3">Twitter</a> 
           </li>
           <li>
-            <a href="#" class="block leading-6 py-3">Instagram</a>
+            <a href="#" class="leading-6 py-3">Instagram</a>
           </li>
         </ul>
       </div>
@@ -74,6 +76,7 @@
 
   
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

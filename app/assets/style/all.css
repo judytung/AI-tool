@@ -19,7 +19,13 @@
   img {
     object-fit: cover;
   }
+
+  a {
+    display: block;
+  }
 }
+
+
 
 @layer utilities {
   .scrollbar-none {
