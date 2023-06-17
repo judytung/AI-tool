@@ -661,6 +661,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1161,6 +1166,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:border-black-100:hover {
   --tw-border-opacity: 1;
   border-color: rgb(2 2 2 / var(--tw-border-opacity));
+}
+.hover\:border-black-0:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .hover\:bg-black-0:hover {
   --tw-bg-opacity: 1;

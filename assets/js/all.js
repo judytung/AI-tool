@@ -81,7 +81,6 @@ function getData(_ref) {
     worksData = res.data.ai_works.data;
     pagesData = res.data.ai_works.page;
     renderWorks();
-    console.log(pagesData);
   });
 }
 
@@ -94,4 +93,19 @@ function renderWorks() {
   });
   list.innerHTML = result;
 }
+/* QA toggle */
+
+
+var QA = document.querySelector('#QA');
+QA.addEventListener('click', function (e) {
+  if (e.target.nodeName == 'UL') return;
+
+  if (e.target.closest("li").childNodes[1].textContent === 'add') {
+    e.target.closest("li").childNodes[1].textContent = 'remove';
+    e.target.closest("li").childNodes[3].childNodes[3].classList.remove('hidden');
+  } else {
+    e.target.closest("li").childNodes[1].textContent = 'add';
+    e.target.closest("li").childNodes[3].childNodes[3].classList.add('hidden');
+  }
+});
 //# sourceMappingURL=all.js.map
